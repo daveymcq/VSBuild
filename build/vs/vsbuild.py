@@ -55,7 +55,7 @@ def vs_compile(vcvarsall = None):
             
             for vs in vs_installations:
 
-                cmd = f'call build\\vs\\vsbuild.bat "{vs}"'
+                cmd = f'call build\\build.bat "{vs}"'
                 print(f'\r\nUsing "{vs}" \r\n')
 
                 if subprocess.getoutput(cmd) != 'ERROR':
@@ -68,7 +68,7 @@ def vs_compile(vcvarsall = None):
 
             if os.path.isfile(vcvarsall):
 
-                cmd = f'call build\\vs\\vsbuild.bat "{vcvarsall}"'
+                cmd = f'call build\\build.bat "{vcvarsall}"'
                 print(f'\r\nUsing "{vcvarsall}" \r\n')
 
                 if subprocess.getoutput(cmd) != 'ERROR':

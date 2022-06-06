@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys, subprocess
-sys.path.insert(1, 'build')
+sys.path.insert(1, 'build/vs')
 from vsbuild import vs_compile
 from vsbuild import list_vs_installations
 from vsbuild import get_vs_installations
